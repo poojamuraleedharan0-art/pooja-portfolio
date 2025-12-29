@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pooja Muraleedharan | Cyber Security Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0b0f1a;
+      color:#eaeaf0;
+      overflow-x:hidden;
+    }
+
+    /* ===== BACKGROUND GRAPHICS ===== */
+    .bg-gradient{
+      position:fixed;
+      inset:0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(94,234,212,0.15), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(196,181,253,0.15), transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(94,234,212,0.12), transparent 40%);
+      z-index:-2;
+    }
+
+    .bg-grid{
+      position:fixed;
+      inset:0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size:40px 40px;
+      z-index:-1;
+    }
+
+    /* ===== HERO ===== */
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      max-width:1200px;
+      align-items:center;
+    }
+
+    .hero-text h1{
+      font-size:3.2rem;
+      color:#c4b5fd;
+    }
+
+    .hero-text p{
+      margin:20px 0;
+      font-size:1.2rem;
+      color:#a5f3fc;
+    }
+
+    .hero-text .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:14px 36px;
+      border-radius:30px;
+      background:linear-gradient(135deg,#5eead4,#c4b5fd);
+      color:#020617;
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    .hero-card{
+      background:rgba(15,23,42,0.85);
+      padding:40px;
+      border-radius:30px;
+      box-shadow:0 30px 80px rgba(0,0,0,0.6);
+      text-align:center;
+    }
+
+    .profile-pic{
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #5eead4;
+      margin-bottom:20px;
+    }
+
+    /* ===== SECTIONS ===== */
+    section{
+      max-width:1200px;
+      margin:120px auto;
+      padding:0 20px;
+    }
+
+    h2{
+      text-align:center;
+      font-size:2.6rem;
+      color:#c4b5fd;
+      margin-bottom:70px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:40px;
+    }
+
+    .card{
+      background:rgba(15,23,42,0.9);
+      padding:35px;
+      border-radius:28px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.6);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg,rgba(94,234,212,0.15),rgba(196,181,253,0.15));
+      opacity:0;
+      transition:.4s;
+    }
+
+    .card:hover::before{opacity:1;}
+
+    .card h3{color:#5eead4;margin-bottom:12px;}
+
+    /* ===== SKILL BARS ===== */
+    .skill{margin-bottom:20px;}
+    .skill span{display:block;margin-bottom:6px;}
+    .bar{
+      width:100%;
+      height:10px;
+      background:#1e293b;
+      border-radius:10px;
+      overflow:hidden;
+    }
+    .bar div{
+      height:100%;
+      background:linear-gradient(90deg,#5eead4,#c4b5fd);
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      padding:50px 20px;
+      text-align:center;
+      background:#020617;
+      color:#94a3b8;
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;text-align:center;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-grid"></div>
+
+<header>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Pooja Muraleedharan</h1>
+      <p>Cyber Security Student • Python Developer • Future Security Analyst</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="hero-card">
+      <img src="profile.jpg" class="profile-pic" alt="Pooja">
+      <p>Jyothi Engineering College<br>KTU • Graduation 2028</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p style="max-width:900px;margin:auto;text-align:center;font-size:1.1rem;">
+    I am a B.Tech Computer Science student specializing in Cyber Security. I enjoy working with security tools, understanding cyber threats, and building Python-based solutions. My career goal is to work as a Cyber Security Analyst and help build safer digital systems.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="skill"><span>Python</span><div class="bar"><div style="width:80%"></div></div></div>
+      <div class="skill"><span>Cyber Security</span><div class="bar"><div style="width:70%"></div></div></div>
+      <div class="skill"><span>Networking</span><div class="bar"><div style="width:60%"></div></div></div>
+    </div>
+    <div class="card">
+      <h3>Tools</h3>
+      <p>Nmap • Wireshark • Linux • GitHub</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card"><h3>Network Scanner</h3><p>Python-based network discovery and port scanning tool.</p></div>
+    <div class="card"><h3>Automated Log Analyzer</h3><p>Detects anomalies and suspicious patterns from system logs.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <div class="cards">
+    <div class="card">YIP</div>
+    <div class="card">IMS Cloud Security</div>
+    <div class="card">Cybersecurity Analyst Job Simulation</div>
+    <div class="card">AI Fundamentals</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="cards">
+    <div class="card">
+      <p>Email: poojamuraleedharan0@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/pooja-muraleedharan-209077310</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Pooja Muraleedharan
+</footer>
+
+</body>
+</html>
